@@ -1,0 +1,125 @@
+.navbar-bg {
+    height: 80vh;
+    padding-top: 1.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("./../../src/images/banner1.png");
+
+    @include sm {
+        height: 40vh
+    }
+}
+
+.navbar-container {
+    top: 0;
+    padding: 0.2rem 4rem;
+    height: 4rem;
+    position: fixed;
+    background-image: url("./../../src/images/banner1.png");
+    width: 100%;
+    z-index: 999;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sm {
+        background-image: none
+    }
+
+    .site-title {
+        color: rgba(22, 1, 1, .906);
+        font-size: 2rem;
+        font-weight: 800;
+
+        @include breakpoint(560px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .links {
+        flex-basis: 30%;
+        height: 50px;
+        color: rgba(22, 1, 1, .906);
+        font-size: 1rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: .3s ease-in-out;
+
+        @include sm {
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: absolute;
+            right: -10rem;
+            top: 1.8rem;
+            background-image: url("./../../src/images/banner1.png");
+            border-radius: 1rem 0 0 1rem;
+            height: 10rem;
+            width: 9rem
+        }
+
+        .item {
+            padding: .3rem .8rem;
+            margin: 0 .3rem;
+            border: 1px solid rgba(0, 0, 0, 0);
+            transition: .3s ease-in-out;
+            border-radius: 4px;
+
+            &:hover {
+                border: 1px solid rgba(22, 1, 1, .906)
+            }
+
+            @include md {
+                padding: .1rem .3rem;
+                margin: 0 .1rem
+            }
+        }
+    }
+
+    .links.active {
+        right: 0;
+    }
+
+
+    // hamburger
+    .hamburger {
+        display: none;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        @include sm {
+            display: block;
+            position: absolute;
+            top: 3rem;
+            right: .6rem
+        }
+
+        .bar {
+            display: block;
+            height: .1rem;
+            width: 1.5rem;
+            background-color: rgba(22, 1, 1, .906);
+            margin-bottom: .2rem;
+            transition: .4s ease-in-out;
+        }
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(2px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hamburger.active {
+        right: 6.5rem;
+    }
+}

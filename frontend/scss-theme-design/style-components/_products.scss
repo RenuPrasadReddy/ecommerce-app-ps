@@ -1,0 +1,24 @@
+.products {
+    // background-color: $grey;
+    margin-top: 5rem;
+}
+
+
+
+
+
+// featured products
+.featured-products{
+    width: 100%;
+    h3 {
+        text-align: center;
+        font-size: $base-font-size * 2;
+        margin-bottom: 1rem;
+    }
+}
+
+.fp-img  {
+    height: auto;
+    width: 20rem;
+    
+}
