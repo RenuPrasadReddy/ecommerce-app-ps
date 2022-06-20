@@ -4,21 +4,21 @@
 Steps to run this project:
 
 1. Backend is written in node js (express server).
-    a. ecommerce-app-ps/backend: npm i
-    b. ecommerce-app-ps/backend: npm start
+    - ecommerce-app-ps/backend: npm i
+    - ecommerce-app-ps/backend: npm start
 
 Note: node server run on 3006 port.
 
 2. Frontend is written in React, sass.
-    a. ecommerce-app-ps/frontend: npm run gulp 
+    - ecommerce-app-ps/frontend: npm run gulp 
         (gulp is used for converting scss into CSS)
-    b. ecommerce-app-ps/frontend: npm run start.
+    - ecommerce-app-ps/frontend: npm run start.
 
     To run react tests:
-        a. ecommerce-app-ps/frontend: npm run test
+        - ecommerce-app-ps/frontend: npm run test
 
 ## Functionlities:
- - On App load, Home page is shown with Navbar with Home, cart, Contact, Login. (only Ho,e and Cart functionlities implemented).
+ - On App load, Home page is shown with Navbar with Home, cart, Contact, Login. (only Home and Cart functionlities implemented).
 
  - In Home page first it loads 100 products, first two products shown as Featured Products.
 
