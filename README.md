@@ -38,13 +38,13 @@ Note: node server run on 3006 port.
     
 ## Note: 
 1. SCSS
-- SCSS is used for central themeing (refer folder: SCSS-theme-design).
-- In the SCSS/index.scss file, theme is imported. 
+    - SCSS is used for central themeing (refer folder: SCSS-theme-design).
+    - In the SCSS/index.scss file, theme is imported. 
     gulpfile will observe scss,js,html files and converts the scss into css and writes it to src/css/index.css.
 
 2. Testing: 
-- on executing npm run test, coverge folder is created and check the below file for quick lookup on testcase coverage.
-check ecommerce-app-ps/frontend/coverage/lcov-report/src/components/index.html
+    - on executing npm run test, coverge folder is created and check the below file for quick lookup on testcase coverage.
+    check ecommerce-app-ps/frontend/coverage/lcov-report/src/components/index.html
 
 3. Contains Code splitting to enhance performance.
 
