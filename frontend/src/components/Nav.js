@@ -2,7 +2,7 @@ import React, {  useState } from 'react'
 import { Link } from "react-router-dom";
 
 function Nav() {
-
+  console.log("=====nav");
   const [active, setActive] = useState(false);
   const handleHamburger = () => {
     setActive(!active)
@@ -15,7 +15,7 @@ function Nav() {
 
         <ul className={active ? "links active" : "links"}>
           <li className="item"><Link to="/">HOME</Link></li>
-          <li className="item"><Link to="Cart">CART</Link></li>
+          <li className="item" data-testid='cart'><Link to="Cart">CART</Link></li>
           <li className="item"><Link to="/">CONTACT</Link></li>
           <li className="item"><Link to="/">LOGIN</Link></li>
         </ul>

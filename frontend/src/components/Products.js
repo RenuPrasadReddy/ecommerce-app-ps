@@ -21,11 +21,11 @@ function Products() {
     `;
 
     useEffect(() => {
-        console.log("running udeEffect, pagenumner...==============", activePage);
+        console.log("running useEffect, pagenumber...==============", activePage);
         (async () => {
             setLoading(true);
             const data = await axios(`http://localhost:3006/products?pageNum=${activePage}&limit=${100}`)
-            console.log("server data=", data);
+            // console.log("server data=", data);
             setProductData(data);
             setLoading(false)
         })()
@@ -47,6 +47,10 @@ function Products() {
         console.log("cart=", cartItems);
 
         if (cartItems && cartItems.length > 0) {
+            for(var i=0; i<cartItems.length; i++) {
+                if(product.id === cartItems[i].id)
+                    return;
+            }
             let cartArr = [...cartItems, product]
             localStorage.setItem('cart', JSON.stringify(cartArr));
         }
@@ -55,8 +59,8 @@ function Products() {
             localStorage.setItem('cart', JSON.stringify(cartArr));
         }
 
-        let cartItems1 = localStorage.getItem('cart');
-        console.log("cart after update=", JSON.parse(cartItems1));
+        // let cartItems1 = localStorage.getItem('cart');
+        // console.log("cart after update=", JSON.parse(cartItems1));
         
     }
 
