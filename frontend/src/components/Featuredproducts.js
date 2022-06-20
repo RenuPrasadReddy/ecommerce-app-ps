@@ -1,23 +1,17 @@
 import React from 'react'
-import Card from './Card.js';
-function Featuredproducts({products}) {
+// import Card from './Card.js';
+const Card = React.lazy(() => import('./Card'))
+
+function Featuredproducts({products, isFeaturedProducts, handleAddToCart}) {
     console.log("oo=========", products.length);
   return (
     <section className="featured-products">
         <h3>Featured products of different category</h3>
-        <div className="row justify-center">
-            {
-                products.map( (product) => <Card key={product.key} product={product}/>)
-            }
-                {/* <div className="card mr-2">
-                    <img src={products?.data[0]?.images[0]} alt={products?.data[0]?.title} className="fp-img"></img>
-                    <p className="card-title">{products?.data[0]?.title}</p>
-                    <div className="card-body">
-                        <p>Price: {products?.data[0]?.price} Rs</p>
-                        <button className="btn-primary">Add to cart</button>
-                    </div>
-                </div> */}
 
+        <div className="row justify-space-around mb-2">
+            {
+                products.map( (product, index) => <Card handleAddToCart={handleAddToCart} isFeaturedProducts={isFeaturedProducts} key={product.id} product={product}/>)
+            }
         </div>
     </section>
   )

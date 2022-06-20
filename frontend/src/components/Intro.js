@@ -1,8 +1,11 @@
 import React from 'react';
-import jewel_img from '../images/img.png';
-import Products from './Products';
+import jewel_img from '../images/img.webp';
+// import Products from './Products';
+// const jewel_img = React.lazy(() => import('../images/img.png'))
+const Products = React.lazy(() => import('./Products'))
 
 function Intro() {
+    console.log("introooooooooooo");
     return (
         <>
         <section className="intro container">

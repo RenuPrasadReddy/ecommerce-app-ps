@@ -1,0 +1,20 @@
+.main-products{
+    background-color: #FFEFC2;
+    border-radius: $base-border-radius * 0.5;
+    width: 100%;
+    h3 {
+        text-align: center;
+        font-size: $base-font-size * 2;
+        margin-bottom: 1rem;
+    }
+
+    .products-list {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .main-prod-img {
+        height: 14rem;
+        width: 18rem;
+    }
+}
