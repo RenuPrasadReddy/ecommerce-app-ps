@@ -1,0 +1,164 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "title": "Rustic Rubber Keyboard",
+            "price": 612,
+            "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+            "category": {
+                "id": 4,
+                "name": "Shoes",
+                "image": "https://api.lorem.space/image/shoes?w=640&h=480&r=490"
+            },
+            "images": [
+                "https://api.lorem.space/image/shoes?w=640&h=480&r=4084",
+                "https://api.lorem.space/image/shoes?w=640&h=480&r=8816",
+                "https://api.lorem.space/image/shoes?w=640&h=480&r=8215"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Awesome Cotton Pizza",
+            "price": 708,
+            "description": "The Football Is Good For Training And Recreational Purposes",
+            "category": {
+                "id": 1,
+                "name": "Clothes",
+                "image": "https://api.lorem.space/image/fashion?w=640&h=480&r=6676"
+            },
+            "images": [
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=3776",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=9939",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=2211"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Rustic Soft Keyboard",
+            "price": 641,
+            "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+            "category": {
+                "id": 3,
+                "name": "Furniture",
+                "image": "https://api.lorem.space/image/furniture?w=640&h=480&r=427"
+            },
+            "images": [
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=1671",
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=2303",
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=6622"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Generic Rubber Mouse",
+            "price": 336,
+            "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+            "category": {
+                "id": 1,
+                "name": "Clothes",
+                "image": "https://api.lorem.space/image/fashion?w=640&h=480&r=6676"
+            },
+            "images": [
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=5165",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=8586",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=7166"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Small Frozen Gloves",
+            "price": 928,
+            "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+            "category": {
+                "id": 3,
+                "name": "Furniture",
+                "image": "https://api.lorem.space/image/furniture?w=640&h=480&r=427"
+            },
+            "images": [
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=7620",
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=2967",
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=1700"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Ergonomic Soft Mouse",
+            "price": 922,
+            "description": "The Football Is Good For Training And Recreational Purposes",
+            "category": {
+                "id": 2,
+                "name": "Electronics",
+                "image": "https://api.lorem.space/image/watch?w=640&h=480&r=4815"
+            },
+            "images": [
+                "https://api.lorem.space/image/watch?w=640&h=480&r=8636",
+                "https://api.lorem.space/image/watch?w=640&h=480&r=131",
+                "https://api.lorem.space/image/watch?w=640&h=480&r=5665"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Rustic Steel Ball",
+            "price": 534,
+            "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+            "category": {
+                "id": 1,
+                "name": "Clothes",
+                "image": "https://api.lorem.space/image/fashion?w=640&h=480&r=6676"
+            },
+            "images": [
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=6418",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=4606",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=8818"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Generic Fresh Chips",
+            "price": 371,
+            "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+            "category": {
+                "id": 5,
+                "name": "Others",
+                "image": "https://api.lorem.space/image?w=640&h=480&r=8767"
+            },
+            "images": [
+                "https://api.lorem.space/image?w=640&h=480&r=3777",
+                "https://api.lorem.space/image?w=640&h=480&r=5064",
+                "https://api.lorem.space/image?w=640&h=480&r=1804"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Generic Cotton Shoes",
+            "price": 189,
+            "description": "The Football Is Good For Training And Recreational Purposes",
+            "category": {
+                "id": 3,
+                "name": "Furniture",
+                "image": "https://api.lorem.space/image/furniture?w=640&h=480&r=427"
+            },
+            "images": [
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=7842",
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=9010",
+                "https://api.lorem.space/image/furniture?w=640&h=480&r=7191"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Unbranded Fresh Towels",
+            "price": 906,
+            "description": "The Football Is Good For Training And Recreational Purposes",
+            "category": {
+                "id": 1,
+                "name": "Clothes",
+                "image": "https://api.lorem.space/image/fashion?w=640&h=480&r=6676"
+            },
+            "images": [
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=3041",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=3351",
+                "https://api.lorem.space/image/fashion?w=640&h=480&r=2347"
+            ]
+        }
+    ]
+}

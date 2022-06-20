@@ -1,10 +1,14 @@
 const express = require('express');
+var cors = require('cors')
 
 const productRoute = require('./src/routes/productRoute');
 
 const app = express();
 app.use(express.json())
-console.log("here");
-app.listen(process.env.PORT || 3001, ()=> console.log("server listening to port ", 3001));
+app.use(cors());
+console.log("starting server");
+
+const port = 3006;
+app.listen(3006, ()=> console.log("server listening to port ", port));
 
 app.use('/products', productRoute);

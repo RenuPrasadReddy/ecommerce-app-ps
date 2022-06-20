@@ -1,0 +1,45 @@
+.cart {
+    color: $brown;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30rem;
+    font-size: 0.8rem;
+
+    @include sm {
+        margin-top: -10rem;
+    }
+    .product_img {
+        width: 5rem;
+        height: auto;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom:3rem;
+        font-size: $base-font-size * 1.5;
+        font-weight: 400;
+    }
+    .cart-card {
+        background-color: #efeee3;
+        flex-direction: row;        
+        align-items: center;
+        padding: 0.8rem;
+        gap: 1rem;
+
+        .img-title{
+            flex-grow: 1;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+    }
+
+    .bg-grey {
+        background-color: #efeee3;
+      }
+}

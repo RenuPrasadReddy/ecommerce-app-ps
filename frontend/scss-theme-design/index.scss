@@ -1,0 +1,25 @@
+// variables & functions
+@import 'functions';
+@import 'variables';
+
+// base & layout
+@import 'base';
+@import 'breakpoints';
+@import 'grid';
+
+// colors
+@import "colors";
+
+// components (button, card, navbar etc)
+@import 'style-components/card';
+@import 'style-components/button';
+@import 'style-components/nav';
+@import 'style-components/intro';
+@import 'style-components/cart';
+@import 'style-components/products';
+@import 'style-components/_main-products';
+@import 'style-components/_cart';
+@import 'style-components/_pagination';
+
+// utilities (margin, padding, opacity, etc)
+@import 'utilities';
