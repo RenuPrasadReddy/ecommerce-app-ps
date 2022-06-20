@@ -3,7 +3,7 @@ import React from 'react'
 const Card = React.lazy(() => import('./Card'))
 
 function Featuredproducts({products, isFeaturedProducts, handleAddToCart}) {
-    console.log("oo=========", products.length);
+    // console.log("oo=========", products.length);
   return (
     <section className="featured-products">
         <h3>Featured products of different category</h3>

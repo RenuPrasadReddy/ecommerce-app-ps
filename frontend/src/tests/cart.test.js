@@ -1,17 +1,39 @@
 import { render, screen, act, waitFor, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { createMemoryHistory } from 'history'
-import { Router } from 'react-router-dom';
 
 import App from '../App';
 
-describe.skip("check cart", () => {
+import {  rest } from 'msw'
+import {  setupServer } from 'msw/node';
+import data from './mockResponseData.json';
+
+const worker = setupServer(
+    rest.get('*', (req, res, ctx) => {
+        return res(
+            ctx.delay(1500),
+            ctx.status(202, 'Mocked status'),
+            ctx.json({
+                data: data,
+            }),
+        )
+    }),
+)
+
+const server = setupServer(
+    rest.get('/products', (req, res, ctx) => {
+        return res(ctx.json({ token: 'mocked_user_token' }))
+    }),
+)
+
+
+describe("check cart", () => {
     jest.setTimeout(30000);
 
     test('to check cart item', async () => {
         render(<App />);
-        const history = createMemoryHistory()
-        history.push('/home')
+        // const history = createMemoryHistory()
+        // history.push('/home')
 
         let pagination = null;
         let items = 0;
@@ -37,7 +59,7 @@ describe.skip("check cart", () => {
         act(() => {
             cartElement = screen.getByTestId("cart");
         });
-        console.log("======", cartElement);
+        console.log("cartEl=====", cartElement);
 
         act(() => {
             fireEvent.click(cartElement);
@@ -46,7 +68,25 @@ describe.skip("check cart", () => {
 
     });
 
-    test.skip('to check title when cart is empty', async () => {
+    test('to check no cart items string', async () => {
+        const {container, unmount}= render(<App />);
+        await new Promise((r) => setTimeout(r, 5000));
+
+        let cartElement = null;
+        act(() => {
+            cartElement = screen.getByTestId("cart");
+        });
+        console.log("======", cartElement);
+
+        act(() => {
+            fireEvent.click(cartElement);
+        })
+        screen.debug()
+        await waitFor(() => expect(screen.getByText(/No items in cart/i)).toBeInTheDocument(), {timeout: 12000})
+        // unmount()
+    });
+
+    test('to check total price', async () => {
         const {container, unmount}= render(<App />);
 
         let cartElement = null
@@ -58,7 +98,7 @@ describe.skip("check cart", () => {
         act(() => {
             fireEvent.click(cartElement);
         })
-        await act(() => expect(screen.getByText(/No items in cart/i)).toBeInTheDocument())
+        await act(() => expect(screen.getByText(/total/i)).toBeInTheDocument())
         unmount()
     });
 

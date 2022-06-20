@@ -21,7 +21,7 @@ function Products() {
     `;
 
     useEffect(() => {
-        console.log("running useEffect, pagenumber...==============", activePage);
+        // console.log("running useEffect, pagenumber...==============", activePage);
         (async () => {
             setLoading(true);
             const data = await axios(`http://localhost:3006/products?pageNum=${activePage}&limit=${100}`)
@@ -31,20 +31,13 @@ function Products() {
         })()
     }, [activePage])
 
-    // useEffect(() => {
-    //     console.log("ushhhh data=", productData?.data?.data);
-    // }, [productData])
-
     function handlePagination(pageNumber) {
-        console.log(`active page is ${pageNumber}`);
+        // console.log(`active page is ${pageNumber}`);
         setActivePage(pageNumber)
     }
 
     function handleAddToCart(product) {
-        console.log("in handleAddToCart=", product);
-
         let cartItems = JSON.parse(localStorage.getItem('cart'));
-        console.log("cart=", cartItems);
 
         if (cartItems && cartItems.length > 0) {
             for(var i=0; i<cartItems.length; i++) {
@@ -58,9 +51,6 @@ function Products() {
             let cartArr = [product]
             localStorage.setItem('cart', JSON.stringify(cartArr));
         }
-
-        // let cartItems1 = localStorage.getItem('cart');
-        // console.log("cart after update=", JSON.parse(cartItems1));
         
     }
 

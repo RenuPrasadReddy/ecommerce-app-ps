@@ -8,6 +8,7 @@ app.use(express.json())
 app.use(cors());
 console.log("starting server");
 
-app.listen(process.env.PORT || 3006, ()=> console.log("server listening to port ", 3006));
+const port = 3006;
+app.listen(3006, ()=> console.log("server listening to port ", port));
 
 app.use('/products', productRoute);

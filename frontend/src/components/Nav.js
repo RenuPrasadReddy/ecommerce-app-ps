@@ -2,7 +2,6 @@ import React, {  useState } from 'react'
 import { Link } from "react-router-dom";
 
 function Nav() {
-  console.log("=====nav");
   const [active, setActive] = useState(false);
   const handleHamburger = () => {
     setActive(!active)

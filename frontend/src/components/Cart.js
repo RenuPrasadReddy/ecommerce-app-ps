@@ -6,7 +6,7 @@ function Cart() {
 
     useEffect(() => {
         const cartItemsfromLS = JSON.parse(localStorage.getItem('cart'));
-        console.log("cartItemsfromLS =",cartItemsfromLS);
+        // console.log("cartItemsfromLS =",cartItemsfromLS);
         setCartItems(cartItemsfromLS)
     }, [])
 
@@ -20,18 +20,16 @@ function Cart() {
 
 
     function handleRemoveFromCart(product) {
-        console.log("in handleRemoveFromCart=", product);
+        // console.log("in handleRemoveFromCart=", product);
 
         let cartItems = JSON.parse(localStorage.getItem('cart'));
-        console.log("cart=", cartItems);
+        // console.log("cart=", cartItems);
 
         if (cartItems && cartItems.length > 0) {
             let cartArr = cartItems.filter((item) => item.id !== product.id)
             localStorage.setItem('cart', JSON.stringify(cartArr));
             setCartItems(cartArr);
         }
-        let cartItems1 = localStorage.getItem('cart');
-        console.log("cart after update=", JSON.parse(cartItems1));
         
     }
    

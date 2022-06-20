@@ -5,7 +5,6 @@ import jewel_img from '../images/img.webp';
 const Products = React.lazy(() => import('./Products'))
 
 function Intro() {
-    console.log("introooooooooooo", jewel_img);
     return (
         <>
         <section className="intro container">
